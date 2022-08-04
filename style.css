@@ -1,0 +1,157 @@
+body {
+    background-color: #eddfb3;
+    font-family: Ibarra Real Nov;
+  }
+  
+  .top-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 72px;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  #welcome-container {
+    max-width: 800px;
+    font-family: "Dancing Script", cursive;
+    font-size: 56px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 4s;
+  }
+  
+  #start-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    color: #000000;
+    background: linear-gradient(to bottom, #ffc300, #ffee63);
+    border: 1px solid #b20600;
+    border-radius: 10px;
+    opacity: 1;
+  }
+  
+  #start-btn:hover {
+    color: #b20600;
+    background: linear-gradient(to bottom, #ffc300, #e6b325);
+    border-color: none;
+  }
+  
+  #quiz {
+    display: none;
+  }
+  
+  .quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #b20600;
+    background: linear-gradient(to bottom, #ffc300, #ffee63);
+    padding-bottom: 30px;
+    perspective: 1000px;
+  }
+  
+  .question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+  }
+  
+  #question {
+    font-size: 36px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .answers {
+    font-size: 32px;
+    padding-bottom: 5px;
+  }
+  
+  .btn {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    color: #ffc300;
+    background: linear-gradient(to bottom, #ff1818, #e83a14);
+    border: 2px solid #e6b325;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    color: #e6b325;
+    background: linear-gradient(to bottom, #ff1818, #e6b325);
+    border-color: #e6b325;
+  }
+  
+  #score {
+    font-size: 20px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .result {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    background: linear-gradient(to bottom, #ffc300, #ffee63);
+    z-index: -1;
+  }
+  
+  .card-face {
+    position: relative;
+    backface-visibility: hidden;
+    background: linear-gradient(to bottom, #ffc300, #ffee63);
+  }
+  
+  .card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .finish-cont {
+    width: 800px;
+    font-family: "Dancing Script", cursive;
+    font-size: 56px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    opacity: 0;
+    transition: 4000ms;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .audio {
+    opacity: 0;
+  }
