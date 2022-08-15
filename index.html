@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=IBM+Plex+Mono:wght@700&family=Ibarra+Real+Nova:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>Muggle or Wizard</title>
+</head>
+<body>
+    <div class="top-container">
+        <img class="logo" src="images/hogwarts logo.png" alt="Hogwarts Logo">
+        <h1>Muggle or Wizard?</h1>
+        <img class="logo" src="images/hogwarts logo.png" alt="Hogwarts Logo">
+    </div>
+    <div id="welcome-container">
+        <p>So you believe you are a wizard and want to get into Hogwarts. This is not easy as you think! First you have
+            to prove to us that you are a real wizard. Are you ready?</p>
+        <button id="start-btn">Let's get started!</button>
+    </div>
+    <div class="quiz-container" id="quiz">
+        <div class="card">
+            <div class="question-container card-face card-front">
+                <h2 id="question">Question text</h2>
+                <ul>
+                    <li class="answers">
+                        <input type="radio" id="a" name="answer" class="answer" />
+                        <label id="a_text" for="a">Answer</label>
+                    </li>
+                    <li class="answers">
+                        <input type="radio" id="b" name="answer" class="answer" />
+                        <label id="b_text" for="b">Answer</label>
+                    </li>
+                    <li class="answers">
+                        <input type="radio" id="c" name="answer" class="answer" />
+                        <label id="c_text" for="c">Answer</label>
+                    </li>
+                    <li class="answers">
+                        <input type="radio" id="d" name="answer" class="answer" />
+                        <label id="d_text" for="d">Answer</label>
+                    </li>
+                </ul>
+                <button id="submit-btn" class="btn">Submit</button>
+                <div id="score">Score: 0</div>
+            </div>
+            <div class="result">
+                <h1 id="correction"></h1>
+                <button id="next-btn" class="btn">Next Question</button>
+            </div>
+        </div>
+    </div>
+    <div id="final-container">
+        <div id="wizard" class="finish-cont">
+            <button id="try-again" class="btn" onClick="window.location.reload();">Try Again</button>
+        </div>
+
+        <div id="muggle" class="finish-cont">
+            <button id="try-again" class="btn" onClick="window.location.reload();">Try Again</button>
+        </div>
+    </div>
+    <div class="audio">
+        <audio controls muted>
+            <source src="./sound/Harry Potter Theme Song.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
