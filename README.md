@@ -26,4 +26,5 @@ Muggle or Wizard is a game where you try to get a chance to become a student at 
 - showQuestion() {}
 - selectAnswer() {}
 - resetAnswers() {}
-- showFinalScore() {}
+- showFinalScore() {}# button-ripple-effect
+# button-ripple-effect
